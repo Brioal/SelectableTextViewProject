@@ -2,6 +2,7 @@
 ### 效果图:![](https://github.com/Brioal/SelectableTextViewProject/blob/master/art/2.gif)
 ### 功能如效果图所示,另外提供多选复制的选项,没有对TextView进行过多自定义,更像是一个封装,因此使用方式按照TextView来使用即可
 ### 提供的方法列表
+
 方法 | xml属性 | 方法描述 
 
 :--|:--|:--|:--
