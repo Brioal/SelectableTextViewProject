@@ -14,5 +14,23 @@
 `void setOnWordClickListener(OnWordClickListener onWordClickListener)`|``|设置选中单词的响应事件
 `dismissSelected()`|``|去除选中效果
 
+### 使用方法
+### 1. Add the JitPack repository to your build file
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+```
+### Step 2. Add the dependency
+```
+	dependencies {
+	        compile 'com.github.Brioal:SelectableTextViewProject:1.0'
+	}
+```
+
+
 ### 完毕
 ### 另外我建了个qq群,方便交流,欢迎各种大神,新手老手加入,群号码:375276053
