@@ -192,8 +192,12 @@ public class SelectableTextView extends android.support.v7.widget.AppCompatTextV
             mSpannableString.removeSpan(mSelectedBackSpan);
             mSpannableString.removeSpan(mSelectedForeSpan);
         }
-        mSpannableString.setSpan(mSelectedBackSpan, getSelectionStart(), getSelectionEnd(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        mSpannableString.setSpan(mSelectedForeSpan, getSelectionStart(), getSelectionEnd(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        try {
+            mSpannableString.setSpan(mSelectedBackSpan, getSelectionStart(), getSelectionEnd(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            mSpannableString.setSpan(mSelectedForeSpan, getSelectionStart(), getSelectionEnd(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         setText(mSpannableString, mBufferType);
     }
 
