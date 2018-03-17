@@ -4,9 +4,7 @@
 ### 提供的方法列表:
 
 方法|xml属性|方法描述 
-
-:--|:--|:--
-
+-----|----|----
 `void setEnableMultSelect(boolean enableMultSelect)` | ``| 是否允许多选 
 `void setEnableSingleSelect(boolean enableSingleSelect)` | `` | 是否允许单选
 `void setSelectTextFrontColor(int selectTextFrontColor)` | '' | 设置选中单词的字体颜色(传入color值)
